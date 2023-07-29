@@ -19,7 +19,7 @@ router.get('/:id',getWorkout)
 //POST a new workout
 router.post('/',createWorkout)
 
-//DELETE a workout
+//DELETE  workout
 router.delete('/:id',deleteWorkout)
 
 
