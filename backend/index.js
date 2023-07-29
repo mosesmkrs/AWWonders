@@ -19,7 +19,7 @@ app.use((req,res,next) => {
 })
 
 //cors
-app.use(cors({ origin: 'https://aw-wonders-frontend.vercel.app' }));
+app.use(cors({ origin: 'https://aw-wonders.vercel.app/' }));
 
    //routes
 app.use('/api/workouts/',workoutRoutes)
