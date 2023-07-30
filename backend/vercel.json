@@ -1,11 +1,10 @@
 {
-   "version": 2,
-   "routes": [
-     {
-       "src": "/api/(.*)",
-       "headers": { "Access-Control-Allow-Origin": "*" },
-       "dest": "/api/$1"
-     }
-   ]
- }
- 
+  "version": 2,
+  "routes": [
+    {
+      "src": "/(.*)",
+      "headers": { "Access-Control-Allow-Origin": "*" },
+      "dest": "/api/$1"
+    }
+  ]
+}
