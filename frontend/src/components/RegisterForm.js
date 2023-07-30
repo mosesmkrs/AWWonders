@@ -17,7 +17,7 @@ const RegisterForm = () => {
 
     // Send the registration request to the backend
     try {
-      const response = await fetch('/api/users/register', {
+      const response = await fetch('https://aw-wonders-q8l4.vercel.app/api/users/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
