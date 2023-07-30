@@ -7,7 +7,13 @@ const userRoutes = require('./routes/userRoutes');
 const mongoose = require('mongoose')
 const cors = require('cors');
 
-
+// Enable CORS for a specific origin
+const corsOptions = {
+    origin: 'https://aw-wonders.vercel.app',
+  };
+  
+ 
+  
 
 
 //express app
@@ -21,7 +27,7 @@ app.use((req,res,next) => {
 })
 
 // the cors
-app.use(cors());
+app.use(cors(corsOptions));
 
    //routes
 app.use('/api/workouts',workoutRoutes)
