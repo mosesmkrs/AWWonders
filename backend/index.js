@@ -18,7 +18,7 @@ app.use((req,res,next) => {
     next()
 })
 
-//cors
+// the cors
 app.use(cors({ origin: 'https://aw-wonders.vercel.app/' }));
 
    //routes
